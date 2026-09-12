@@ -5,7 +5,7 @@ Ce projet explore les facteurs qui influencent les résultats scolaires des étu
 ## Données
 
 Le dataset utilisé est **Student Performance Factors** disponible sur Kaggle :
-👉 https://www.kaggle.com/datasets/lainguyn123/student-performance-factors/data
+ https://www.kaggle.com/datasets/lainguyn123/student-performance-factors/data
 
 Pour reproduire ce projet :
 1. Télécharger le fichier `data.csv` depuis le lien Kaggle ci-dessus (nécessite un compte Kaggle gratuit).
