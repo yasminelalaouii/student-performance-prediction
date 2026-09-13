@@ -1,30 +1,30 @@
-# Prédiction de la réussite des étudiants
+# Student Performance Prediction
 
-Ce projet explore les facteurs qui influencent les résultats scolaires des étudiants (heures d'étude, présence, sommeil, soutien parental, etc.) et compare plusieurs modèles de machine learning pour prédire si un étudiant obtiendra un score d'examen au-dessus ou en dessous de la médiane.
+This project explores the factors that influence students' academic outcomes (study hours, attendance, sleep, parental support, etc.) and compares several machine learning models to predict whether a student's exam score will fall above or below the median.
 
-## Données
+## Data
 
-Le dataset utilisé est **Student Performance Factors** disponible sur Kaggle :
- https://www.kaggle.com/datasets/lainguyn123/student-performance-factors/data
+The dataset used is **Student Performance Factors**, available on Kaggle:
+https://www.kaggle.com/datasets/lainguyn123/student-performance-factors/data
 
-Pour reproduire ce projet :
-1. Télécharger le fichier `data.csv` depuis le lien Kaggle ci-dessus (nécessite un compte Kaggle gratuit).
-2. Placer `data.csv` dans le même dossier que le notebook.
+To reproduce this project:
+1. Download the `data.csv` file from the Kaggle link above (requires a free Kaggle account).
+2. Place `data.csv` in the same folder as the notebook.
 
-## Contenu du notebook
+## Notebook Contents
 
-- **Analyse exploratoire des données (EDA)** : distributions, valeurs manquantes, corrélations, visualisations (histogrammes, boxplots, heatmap, pairplot).
-- **Prétraitement** : encodage des variables catégorielles avec `OneHotEncoder`.
-- **Modèles de classification** (prédire si le score est au-dessus/en-dessous de la médiane) :
-  - Arbre de décision (avec comparaison des critères gini / entropy / log_loss et visualisation de l'arbre)
-  - SVM (noyau linéaire et RBF)
+- **Exploratory Data Analysis (EDA)**: distributions, missing values, correlations, visualizations (histograms, boxplots, heatmap, pairplot).
+- **Preprocessing**: categorical variable encoding with `OneHotEncoder`.
+- **Classification models** (predicting whether the score is above/below the median):
+  - Decision Tree (comparing gini / entropy / log_loss criteria, with tree visualization)
+  - SVM (linear and RBF kernels)
   - Naive Bayes
-  - Régression logistique
-- **Clustering non supervisé** :
-  - K-Means (méthode du coude pour choisir le nombre de clusters)
-  - Clustering hiérarchique (dendrogramme)
+  - Logistic Regression
+- **Unsupervised clustering**:
+  - K-Means (elbow method to choose the number of clusters)
+  - Hierarchical clustering (dendrogram)
   - DBSCAN
-  - Visualisation via PCA (réduction à 2 dimensions)
+  - Visualization via PCA (dimensionality reduction to 2D)
 
 ## Installation
 
@@ -32,15 +32,15 @@ Pour reproduire ce projet :
 pip install -r requirements.txt
 ```
 
-## Utilisation
+## Usage
 
-Ouvrir le notebook avec Jupyter :
+Open the notebook with Jupyter:
 
 ```bash
 jupyter notebook student_performance_prediction.ipynb
 ```
 
-et exécuter les cellules dans l'ordre.
+and run the cells in order.
 
 ## Technologies
 
